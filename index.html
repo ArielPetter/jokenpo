@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/img"
+      href="./assets/+kmSKD-removebg-preview.png"
+    />
+    <title>Jokenpô</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1><strong>Jokenpô</strong></h1>
+      <div class="buttons">
+        <button class="rock" onclick="playHuman('rock')">&#x1F44A;</button>
+        <button class="paper" onclick="playHuman('paper')">&#x1f590;</button>
+        <button class="scissors" onclick="playHuman('scissors')">
+          &#x270c;
+        </button>
+      </div>
+      <!--div botões-->
+      <p class="winner"></p>
+      <p class="my-point">
+        <strong>Sua Pontuação: <span id="human-score">0</span></strong>
+      </p>
+      <p class="bot-point">
+        <strong>Pontuação do Bot: <span id="bot-score">0</span></strong>
+      </p>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
